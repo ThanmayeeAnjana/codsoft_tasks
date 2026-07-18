@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Blog</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+BlogSphere
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Categories</a></li>
+<li><a href="#">Blogs</a></li>
+<li><a href="#">About</a></li>
+
+</ul>
+
+<div class="nav-right">
+
+<button id="darkBtn">
+<i class="fas fa-moon"></i>
+</button>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+Discover Amazing Stories
+</h1>
+
+<p>
+
+Read inspiring articles from developers around the world.
+
+</p>
+
+<a href="#blogs">
+
+<button>
+
+Explore Blogs
+
+</button>
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
+alt="">
+
+</div>
+
+</section>
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+<input
+
+type="text"
+
+placeholder="Search blogs..."
+
+id="search"
+
+>
+
+<select id="category">
+
+<option value="all">
+
+All Categories
+
+</option>
+
+<option>
+
+Technology
+
+</option>
+
+<option>
+
+Programming
+
+</option>
+
+<option>
+
+AI
+
+</option>
+
+<option>
+
+Career
+
+</option>
+
+</select>
+
+</section>
+
+<!-- FEATURED -->
+
+<section class="featured">
+
+<h2>
+
+Featured Blog
+
+</h2>
+
+<div class="featured-card">
+
+<img
+src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900">
+
+<div>
+
+<span>
+
+Technology
+
+</span>
+
+<h3>
+
+The Future of Frontend Development
+
+</h3>
+
+<p>
+
+Discover the latest frontend trends, frameworks and tools shaping modern web development.
+
+</p>
+
+<a href="blog.html">
+
+<button>
+
+Read More
+
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BLOGS -->
+
+<section
+class="blogs"
+id="blogs">
+
+<h2>
+
+Latest Blogs
+
+</h2>
+
+<div
+class="blog-grid"
+id="blogGrid">
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>
+
+BlogSphere
+
+</h2>
+
+<p>
+
+Made with ❤️ using HTML CSS JavaScript
+
+</p>
+
+<div class="social">
+
+<i class="fab fa-facebook"></i>
+
+<i class="fab fa-instagram"></i>
+
+<i class="fab fa-linkedin"></i>
+
+<i class="fab fa-github"></i>
+
+</div>
+
+</footer>
+
+<script src="data.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

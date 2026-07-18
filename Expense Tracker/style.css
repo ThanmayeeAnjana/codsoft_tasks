@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+    color: #333;
+}
+
+.container {
+    width: 95%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #4f46e5;
+    font-size: 2rem;
+}
+
+#themeBtn {
+    border: none;
+    background: #4f46e5;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .3s;
+}
+
+#themeBtn:hover {
+    transform: rotate(20deg);
+}
+
+.balance-card {
+    background: linear-gradient(135deg,#4f46e5,#6366f1);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.balance-card h2 {
+    margin-top: 10px;
+    font-size: 2.4rem;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.income i {
+    color: green;
+}
+
+.expense i {
+    color: red;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-section,
+.transaction-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.form-section h2,
+.transaction-section h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+input,
+select {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #4f46e5;
+}
+
+button[type="submit"] {
+    background: #4f46e5;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: .3s;
+}
+
+button[type="submit"]:hover {
+    background: #4338ca;
+}
+
+.filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+    flex: 1;
+}
+
+#transactionList {
+    list-style: none;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    border-left: 6px solid;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    animation: fade .4s;
+}
+
+.transaction.income {
+    border-color: green;
+}
+
+.transaction.expense {
+    border-color: red;
+}
+
+.left h3 {
+    font-size: 18px;
+}
+
+.left small {
+    color: gray;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.amount {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.edit {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.edit:hover {
+    opacity: .9;
+}
+
+.delete:hover {
+    opacity: .9;
+}
+
+.dark {
+    background: #111827;
+    color: white;
+}
+
+.dark .card,
+.dark .form-section,
+.dark .transaction-section,
+.dark .transaction {
+    background: #1f2937;
+    color: white;
+}
+
+.dark input,
+.dark select {
+    background: #374151;
+    color: white;
+    border: none;
+}
+
+.dark .transaction small {
+    color: #ccc;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:700px){
+
+.summary{
+grid-template-columns:1fr;
+}
+
+.filters{
+flex-direction:column;
+}
+
+.transaction{
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+}
+
+.right{
+width:100%;
+justify-content:space-between;
+}
+
+header h1{
+font-size:1.5rem;
+}
+
+.balance-card h2{
+font-size:2rem;
+}
+
+}
